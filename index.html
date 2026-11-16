@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>Apple — Think Different</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="loader">
+    <div class="loader-logo">●</div>
+    <p>Think different.</p>
+  </div>
+
+  <header class="navbar">
+    <a href="#" class="logo">●</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#iphone">iPhone</a>
+      <a href="#mac">Mac</a>
+      <a href="#ipad">iPad</a>
+      <a href="#watch">Watch</a>
+      <a href="#airpods">AirPods</a>
+      <a href="#products">Products</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☼</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow reveal">THE FUTURE IS HERE</span>
+        <h1 class="hero-title reveal">
+          Think<br>
+          <span>Different.</span>
+        </h1>
+        <p class="hero-description reveal">
+          Innovation that changes everything.
+          Discover the world of Apple.
+        </p>
+        <div class="hero-buttons reveal">
+          <a href="#products" class="btn primary">Explore products</a>
+          <a href="#circle" class="btn secondary">Discover more ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-glow"></div>
+        <img
+          src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=1200"
+          alt="Premium smartphone"
+          class="hero-phone"
+        >
+      </div>
+
+      <div class="hero-bottom">
+        <span>DESIGNED TO INSPIRE</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+      </div>
+    </section>
+
+    <!-- CIRCLE CAROUSEL -->
+    <section class="circle-section" id="circle">
+      <div class="section-heading reveal">
+        <span class="eyebrow">THE APPLE ECOSYSTEM</span>
+        <h2>One world.<br><span>Infinite possibilities.</span></h2>
+        <p>Explore the products that move the world forward.</p>
+      </div>
+
+      <div class="carousel-wrapper">
+        <button class="carousel-arrow prev" id="prevBtn" aria-label="Previous">←</button>
+
+        <div class="circle-stage" id="circleStage">
+          <div class="circle-orbit"></div>
+          <div class="circle-items" id="circleItems">
+
+            <article class="circle-card active" data-index="0">
+              <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=500" alt="iPhone">
+              <span>iPhone</span>
+            </article>
+
+            <article class="circle-card" data-index="1">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500" alt="MacBook">
+              <span>Mac</span>
+            </article>
+
+            <article class="circle-card" data-index="2">
+              <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500" alt="iPad">
+              <span>iPad</span>
+            </article>
+
+            <article class="circle-card" data-index="3">
+              <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=500" alt="Apple Watch">
+              <span>Watch</span>
+            </article>
+
+            <article class="circle-card" data-index="4">
+              <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=500" alt="AirPods">
+              <span>AirPods</span>
+            </article>
+
+            <article class="circle-card" data-index="5">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Accessories">
+              <span>Accessories</span>
+            </article>
+
+          </div>
+        </div>
+
+        <button class="carousel-arrow next" id="nextBtn" aria-label="Next">→</button>
+      </div>
+
+      <div class="carousel-info">
+        <h3 id="carouselTitle">iPhone</h3>
+        <p id="carouselDescription">A whole new level of innovation.</p>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+      <div class="section-heading reveal">
+        <span class="eyebrow">DISCOVER THE LINEUP</span>
+        <h2>Designed for <span>everyone.</span></h2>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card large reveal" id="iphone">
+          <div class="product-text">
+            <span>IPHONE</span>
+            <h3>Oh. So. Pro.</h3>
+            <p>Power meets perfection.</p>
+            <a href="#circle">Explore ↗</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=1000" alt="iPhone">
+        </article>
+
+        <article class="product-card reveal" id="mac">
+          <div class="product-text">
+            <span>MACBOOK</span>
+            <h3>Think bigger.</h3>
+            <p>Power in every pixel.</p>
+            <a href="#circle">Explore ↗</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800" alt="MacBook">
+        </article>
+
+        <article class="product-card reveal" id="ipad">
+          <div class="product-text">
+            <span>IPAD</span>
+            <h3>Make it yours.</h3>
+            <p>Creativity without limits.</p>
+            <a href="#circle">Explore ↗</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800" alt="iPad">
+        </article>
+
+        <article class="product-card reveal" id="watch">
+          <div class="product-text">
+            <span>APPLE WATCH</span>
+            <h3>Time to shine.</h3>
+            <p>More than just time.</p>
+            <a href="#circle">Explore ↗</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800" alt="Watch">
+        </article>
+
+        <article class="product-card reveal" id="airpods">
+          <div class="product-text">
+            <span>AIRPODS</span>
+            <h3>Hear the magic.</h3>
+            <p>Sound beyond imagination.</p>
+            <a href="#circle">Explore ↗</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800" alt="AirPods">
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience-section">
+      <div class="experience-content reveal">
+        <span class="eyebrow">BUILT FOR TOMORROW</span>
+        <h2>Technology.<br><span>With emotion.</span></h2>
+        <p>
+          Beautifully engineered. Thoughtfully designed.
+          Made to inspire the extraordinary.
+        </p>
+        <a href="#products" class="btn primary">Explore the ecosystem</a>
+      </div>
+      <div class="experience-image">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400" alt="Technology workspace">
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">●</div>
+      <p>Innovation is in everything we do.</p>
+      <div class="footer-links">
+        <a href="#iphone">iPhone</a>
+        <a href="#mac">Mac</a>
+        <a href="#ipad">iPad</a>
+        <a href="#watch">Watch</a>
+        <a href="#airpods">AirPods</a>
+      </div>
+      <small>© 2026 Apple Inspired Design. Independent concept project.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
